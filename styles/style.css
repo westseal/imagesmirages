@@ -1,0 +1,530 @@
+@font-face {
+    font-family: "typewriter";
+    src: url("fonts/Toren_Mono.otf");
+}
+
+@font-face {
+    font-family: "happy";
+    src: url("fonts/Junicode_RegularCondensed.ttf");
+}
+
+@font-face {
+    font-family: "italic";
+    src: url("fonts/Toren_Rotalic.otf");
+}
+
+
+body {
+    width: 100vw;
+    height: 100%;
+    font-size: 1.15em;
+    margin: 0;
+    padding: 0;
+    /* background: rgb(143, 143, 143); */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(48, 1fr);
+}
+
+em {
+    font-family: "italic";
+}
+
+
+h2 {
+    font-family: "typewriter";
+    font-size: 1.8em;
+}
+
+h2#title {
+    padding-top: 5%;
+}
+
+h3 {
+    font-family: "typewriter";
+    font-size: 1.4em;
+    text-decoration: underline dotted 1px;
+}
+
+/* text:hover {
+    fill: #19355a;
+} */
+
+a:visited text {
+    fill: yellow;
+    font-weight: 100;
+}
+
+ellipse {
+    /* fill: rgb(168, 168, 168); */
+    stroke: #000000;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-dasharray: 5, 5 M5 20 l215 0;
+}
+
+text {
+    font-size: 40px;
+    font-family: "typewriter";
+    fill: black;
+    cursor: pointer;
+    /* stroke:#000000; */
+}
+
+
+#node1 text {
+    font-size: 60px;
+    font-family: "typewriter";
+    fill: none;
+    cursor: pointer;
+    /* stroke:#000000; */
+}
+
+text:hover {
+    stroke:transparent;
+    font-family: "italic";
+
+
+}
+
+#a_clust2:visited {
+    font-weight: 100;
+}
+
+svg {
+    max-height: 100%;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 4;
+    margin-top: 1%;
+    grid-row: 1/32;
+    grid-column: 1/48;
+}
+
+a:hover.survol span {
+    display: block;
+    position: fixed;
+}
+
+/* a:hover text{ 
+  fill: rebeccapurple; 
+  font-weight: 100;
+}  */
+
+a.survol {
+    position: relative;
+}
+
+/* a:hover text {
+    text-decoration: none;
+    fill: rgb(255, 251, 0);
+} */
+
+.node a:hover image {
+    text-decoration: none;
+    display: block;
+}
+
+image {
+    filter: contrast(130%);
+    mix-blend-mode: color-burn;
+}
+
+.node a:hover polygon {
+    text-decoration: none;
+    transform-origin: 0 0;
+    /* fill: rgb(255, 48, 48); */
+    
+}
+
+.node polygon {
+    /* fill: rgb(0, 0, 0); */
+    stroke: black;
+    stroke-dasharray: 5%;
+
+}
+
+.node ellipse {
+    /* fill: rgb(0, 0, 0); */
+    stroke: black;
+    stroke-dasharray: 5%;
+}
+
+.node ellipse:hover {
+    /* fill: rgb(0, 0, 0); */
+    transform: rotate(45deg);
+}
+
+#node14 text:hover,
+#node13 text:hover,
+#node15 text:hover,
+#node6 text:hover,
+#node5 text:hover,
+#node2 text:hover
+ {
+    font-family: "typewriter";
+    cursor:default;
+    font-size: 40px;
+}
+
+.node polygon:hover {
+    /* fill: black; */
+    stroke: none;
+}
+
+a.survol span {
+    display: none;
+}
+
+a:hover text .survol span {
+    display: block;
+    position: fixed;
+}
+
+#test {
+    display: none;
+}
+
+/* #node1 text {
+  font-size: 60px;
+  fill: #DA4567;
+} */
+
+/* tramer les fonds, moins flat */
+
+.menu {
+    width: auto;
+    position: absolute;
+    z-index: 6;
+    background-color: #ff4d50;
+    width: 220px;
+    height: 275px;
+    bottom: 0;
+    border: solid 1px black;
+}
+.menu ul li {
+    font-family: "typewriter";
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    list-style: circle;
+}
+
+.menu ul li a:hover {
+    font-family: "italic";
+}
+
+.div {
+    background: rgb(0, 0, 0);
+    display: none;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 6;
+    position: absolute;
+}
+
+.close,
+.name,
+.open,
+.retour,
+.croix {
+    cursor: pointer;
+}
+
+.retour {
+    right: 0;
+    position: absolute;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 1em;
+    font-weight: 100;
+    font-family: "typewriter";    
+}
+
+
+
+.retour:hover {
+    color: #e9473b;
+    text-decoration: line-through;
+    transform: rotate(-10deg);
+}
+
+#definition {
+filter: opacity(0%);  
+right: 0;
+position: absolute;
+bottom: 0;
+font-size: 2em;
+font-family: "italic";
+margin: 1%; 
+color: rgb(255, 255, 255);
+}
+
+#definition:hover {
+filter: opacity(100%);    
+}
+
+.nav {
+    background: rgb(197, 197, 197);
+    height: 100vh;
+    width: 27%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 12;
+    position: absolute;
+    right: 0;
+    border-left: solid 1px black;
+}
+
+#paragraphe {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+p {
+    margin-right: 5%;
+    filter: none;
+    font-family: "happy";
+}
+
+#quotes {
+    font-family: "italic";
+}
+
+.photo {
+    vertical-align: middle;
+    height: 100%;
+    /* width: 100%; */
+    position: relative;
+}
+
+.open {
+    position: absolute;
+    right: 7%;
+    z-index: 12;
+    font-size: 1em;
+    color: white;
+    font-family: "typewriter";
+    margin-top: 1%;
+}
+
+.open:hover {
+    transform: rotate(10deg);
+}
+
+
+.close {
+    position: absolute;
+    margin-right: 1%;
+    margin-top: 1%;
+    font-size: 1em;
+    color: white;
+    font-family: "typewriter";
+    right: 0;
+
+}
+.close:hover {
+    font-family: "italic";
+}
+
+footer ul li {
+    display: inline;
+    font-family: "typewriter";
+}
+
+#about {
+    left: 0;
+    position: absolute;
+    margin-left: 1%;
+    bottom: 0;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+#leftAbout {
+    position: absolute;
+    z-index: 6;
+    background-color: #ff4d50;
+    width: 33%;
+    height: 100%;
+    bottom: 0;
+    display: none;
+    left: 0;
+    padding-left: 1%;
+}
+
+#colophon {
+    left: 50%;
+    position: absolute;
+    margin-left: 1%;
+    bottom: 0;
+    margin-bottom: 1%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#middleColophon {
+    position: absolute;
+    z-index: 6;
+    background-color: #ff4d50;
+    width: 33%;
+    height: 100%;
+    bottom: 0;
+    display: none;
+    left: 34%;
+    padding-left: 1%;
+    
+}
+
+
+.croix {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-right: 2%;
+    color:rgb(0, 0, 0);
+}
+
+
+
+.name {
+    border-bottom: solid 1px black;
+    padding: 2%;
+    width: 70%;
+}
+
+.name:hover {
+    /* background-color: #e9473b; */
+    font-family: "italic";
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+
+#precedent {
+    left: 4%;
+    position: absolute;
+    font-size: 1.5em;
+    font-family: "typewriter";
+    cursor: pointer;
+    margin-top: 0%;
+    user-select: none;
+}
+
+#suivant {
+    left: 24%;
+    position: absolute;
+    font-size: 1.5em;
+    font-family: "typewriter";
+    cursor: pointer;
+    margin-top: 0%;
+    user-select: none;
+}
+
+#suivant:hover,
+#precedent:hover {
+    color: #ff4d50;
+}
+
+
+
+ul#tags li {
+    display: inline-flex;
+    list-style: none;
+    padding: 1.5%;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    left: 0;
+    font-family: "typewriter";
+    margin-right: 2%;
+}
+
+ul#tags li:hover {
+    background-color: #ff4d50;
+    color: #d1d1d1;
+    cursor: pointer;
+}
+
+#ressources {
+    list-style:circle;
+    font-family: "happy";
+    text-decoration: none;
+    color: black;
+}
+
+#ressources a{
+    text-decoration: none;
+    color: black;
+}
+
+#ressources a:hover{
+    text-decoration: none;
+    font-family: "italic";
+}
+
+#attention {
+    display: grid;
+    grid-row: 8/32;
+    grid-column: 22/48;
+    width: 500%;
+    z-index: 0;
+}
+
+#intention {
+    position: absolute;
+    top: 1%;
+    width: 95%;
+    margin: 0 5% 0 5%;
+}
+
+#intention p {
+font-family: "happy";
+font-size: 2em;
+overflow-y: scroll;
+}
+
+#intention h1 {
+    font-family: "italic";
+}
+
+#porter {
+    display: grid;
+    grid-row: 4/32;
+    grid-column: 20/48;
+    width: 400%;
+    z-index: 1;
+}
+
+#considérer {
+    display: grid;
+    grid-row: 8/32;
+    grid-column: 5/48;
+    width: 200%;
+    z-index: 3;
+    
+}
+
+a:visited {
+    color: #000000;
+}
+
+#intention a {
+    font-size: 2em;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+}
+
+#intention a:hover {
+  color: #e9473b;
+}

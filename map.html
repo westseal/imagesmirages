@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+
+
+
+        
+        <!-- lien social -->
+        <div class="menu" id="12" style="display: none">
+            <ul>
+                <li class="name" id="nazdrowie">Na Zdrowie</li>
+                <li class="name" id="juliette">Juliette</li>
+                <li class="name" id="calcaire">Calcaire</li>
+                <li class="name" id="battue">Battue</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- communs -->
+        <div class="menu" id="3" style="display: none">
+            <ul>
+                <li class="name" id="nuee">Nuée</li>
+                <li class="name" id="siamotutti">Siamo Tutti</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- sensibilité -->
+        <div class="menu" id="9" style="display: none">
+            <ul>
+                <li class="name" id="electrique">Electrique</li>
+                <li class="name" id="fleurs">Fleurs Plastiques</li>
+                <li class="name" id="pressionhumaine">Pression Humaine</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- proximité -->
+        <div class="menu" id="10" style="display: none">
+            <ul>
+                <li class="name" id="squareviolette">Square Violette</li>
+                <li class="name" id="covidangel">Covid angel</li>
+                <li class="name" id="detecteurs1">Détecteurs</li>
+                <li class="name" id="roman">roman</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+        <!-- mémoire -->
+        <div class="menu" id="4" style="display: none">
+            <ul>
+                <li class="name" id="traktor">Bernard</li>
+                <li class="name" id="nosaieux">Nos Aïeux</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- contemplation -->
+        <div class="menu" id="8" style="display: none">
+            <ul>
+                <li class="name" id="waves">Waves</li>
+                <li class="name" id="flou">flou</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- arrêt sur image -->
+        <div class="menu" id="11" style="display: none">
+            <ul>
+                <li class="name" id="vénerie">Vénerie</li>
+                <li class="name" id="recreation">Récréation</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <!-- temporalités -->
+        <div class="menu" id="7" style="display: none">
+            <ul>
+                <li class="name" id="bergesdurhone">berges du rhône</li>
+                <li class="name" id="courteechelle">Courte échelle</li>
+                <span class="croix">+</span>
+            </ul>
+        </div>
+
+        <div class="div" id="fullscreen" style="display: none">
+            <span class="close">retour</span>
+            <div class="slider">
+                <img src="img/photos/battue.jpg" alt="battue" id="slide-active" />
+                <p class="open" id="open-description">ouvre-moi</p>
+                <span id="definition"></span>
+            </div>
+        </div>
+        <div class="nav" id="description" style="display: none">
+            <header>
+                <span class="retour">ferme-moi</span>
+                <div class="fleches"></div>
+                <div id="precedent" onclick="ChangeSlide(-1)">≺</div>
+                <div id="suivant" onclick="ChangeSlide(1)">≻</div>
+            </header>
+            <div id="paragraphe">
+                <h2 id="title">Super photo</h2>
+                    <p id="content">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet.
+                    </p>
+
+                    <blockquote id="quotes">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet.
+                    </blockquote>
+
+                    <h3 id="ressources-title">Ressources</h3>
+                    <ul id="ressources">
+                    </ul>
+
+                    <h3 id="tags-title">Tags</h3>
+                    <ul id="tags">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <svg
+            viewBox="0.00 0.00 3462.86 1496.83"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+            <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1472.8318)">
+                <title>%0</title>
+                <polygon
+                    fill="none"
+                    stroke="transparent"
+                    points="-4,4 -4,-1372.8318 3248.8581,-1372.8318 3248.8581,4 -4,4"
+                />
+            
+
+              
+
+                
+                <!-- a -->
+                <g id="node1" class="node">
+                    <title>a</title>
+                    <text
+                        class="clicky"
+                        text-anchor="middle"
+                        x="1502.2606"
+                        y="-611.849"
+                        font-family="Times,serif"
+                        font-size="40.00"
+                    >
+                        porter attention, considérer
+                    </text>
+                </g>
+                <!-- i -->
+                <g id="node9" class="node">
+                    <title>i</title>
+                    
+                    <g id="a_node9">
+                        <a xlink:title="sensible">
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="1282.9613"
+                                cy="-1079.2286"
+                                rx="102.36"
+                                ry="102.36"
+                            />
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="1282.9613"
+                                cy="-1079.2286"
+                                rx="106.3574"
+                                ry="106.3574"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="1282.9613"
+                                y="-1067.2286"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                sensible
+                            </text>
+                            <image
+                                height="50%"
+                                x="1228.2152"
+                                y="-1500.1546"
+                                display="none"
+                                xlink:href="img/ascii/vu1.jpg"
+                                transform="rotate(10)"
+                            ></image>
+                        </a>
+                    </g>
+                </g>
+                <!-- a&#45;&#45;i -->
+                <g id="edge2" class="edge">
+                    <title>a&#45;&#45;i</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1488.7079,-651.9914C1457.5646,-716.6611 1379.6988,-878.3512 1329.1909,-983.2319"
+                    />
+                </g>
+                <!-- k -->
+
+                <g id="node11" class="node">
+                    <title>k</title>
+                    <g id="a_node11">
+                        <a xlink:title="arrêt sur image">
+                            <image
+                            height="50%"
+                            x="1028.2152"
+                            y="-800.1546"
+                            display="none"
+                            xlink:href=" img/ascii/run3(2).jpg"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="539.0368,-912.5656 251.0368,-912.5656 251.0368,-840.5656 539.0368,-840.5656 539.0368,-912.5656"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="395.0368"
+                                y="-864.5656"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                arrêt sur image
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- a&#45;&#45;k -->
+                <g id="edge3" class="edge">
+                    <title>a&#45;&#45;k</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1379.5378,-651.8597C1173.4631,-698.8949 758.9293,-793.5096 539.2722,-843.6449"
+                    />
+                </g>
+                <!-- l -->
+                <g id="node12" class="node">
+                    
+                    <title>l</title>
+                    <g id="a_node12">
+                        <defs>
+                            <radialGradient id="sampleGradient">
+                               <stop offset="0%" stop-color="#FF0000" />
+                               <stop offset="100%" stop-color="#00FFF00" />
+                            </radialGradient>
+                         </defs>
+                        <a xlink:title="lien social">
+                            <image
+                            height="50%"
+                            x="428.2152"
+                            y="-1100.1546"
+                            display="none"
+                            xlink:href="img/ascii/nazdro2.jpg"
+                            transform="rotate(10)"
+                        ></image>
+                            <text
+                                text-anchor="middle"
+                                x="1959.102"
+                                y="-575.7652"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                lien social
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- a&#45;&#45;l -->
+                <g id="edge4" class="edge">
+                    <title>a&#45;&#45;l</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1727.6699,-606.045C1757.3713,-603.699 1787.1406,-601.3477 1814.9685,-599.1497"
+                    />
+                </g>
+                <!-- p -->
+                <g id="node14" class="node">
+                    <title>p</title>
+                    <g id="a_node14">
+                        <a xlink:title="politique">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="395.0368,-427.1324 236.5965,-371.1324 395.0368,-315.1324 553.4771,-371.1324 395.0368,-427.1324"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="395.0368"
+                                y="-359.1324"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                politique
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- a&#45;&#45;p -->
+                <g id="edge6" class="edge">
+                    <title>a&#45;&#45;p</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1379.5378,-595.8384C1157.2756,-545.1085 692.5181,-439.0306 491.3116,-393.1066"
+                    />
+                </g>
+                <!-- b -->
+                <g id="node2" class="node">
+                    <title>b</title>
+                    <g id="a_node2">
+                        <a xlink:title="communication">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="3244.9402,-387.3825 2808.0112,-387.3825 2695.6121,-275.3825 3132.5411,-275.3825 3244.9402,-387.3825"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="2970.2761"
+                                y="-319.3825"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                communication
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- c -->
+                <g id="node3" class="node">
+                    <title>c</title>
+                    <g id="a_node3">
+                        <a xlink:title="communs">
+                            <image
+                            height="50%"
+                            x="1628.2152"
+                            y="-500.1546"
+                            display="none"
+                            transform="rotate(-10)"
+                            xlink:href="img/ascii/acab.jpg"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="2486.7096,-114.4926 2371.5526,-164.2433 2256.3956,-114.4926 2256.5031,-33.9941 2486.6021,-33.9941 2486.7096,-114.4926"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="2371.5526"
+                                y="-80.2433"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                communs
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- b&#45;&#45;c -->
+                <g id="edge9" class="edge">
+                    <title>b&#45;&#45;c</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M2829.9021,-275.315C2714.8059,-229.3438 2555.5392,-165.7303 2458.2447,-126.8695"
+                    />
+                </g>
+                <!-- d -->
+                <g id="node4" class="node">
+                    <title>d</title>
+                    <g id="a_node4">
+                        <a xlink:title="mémoire">
+                            <image
+                            height="30%"
+                            x="1928.2152"
+                            y="-800.1546"
+                            display="none"
+                            xlink:href="img/ascii/traktor1.jpg"
+                            transform="rotate(-5)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="3071.8571,-956.9997 3071.8571,-992.4012 2987.5038,-1017.4338 2868.2103,-1017.4338 2783.8571,-992.4012 2783.8571,-956.9997 2868.2103,-931.9671 2987.5038,-931.9671 3071.8571,-956.9997"
+                            />
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="3075.8571,-954.0257 3075.8571,-995.3752 2988.0865,-1021.422 2867.6277,-1021.422 2779.8571,-995.3752 2779.8571,-954.0257 2867.6277,-927.979 2988.0865,-927.979 3075.8571,-954.0257"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="2927.8571"
+                                y="-962.7005"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                mémoire
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- d&#45;&#45;b -->
+                <g id="edge12" class="edge">
+                    <title>d&#45;&#45;b</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M2930.9419,-927.9164C2938.5775,-812.1168 2958.3353,-512.474 2966.5787,-387.4574"
+                    />
+                </g>
+                <!-- e -->
+                <g id="node5" class="node">
+                    <title>e</title>
+                    <g id="a_node5">
+                        <a xlink:title="transmission">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="2302.9171,-1053.7613 2611.5912,-1172.8499 1994.2429,-1172.8499 2302.9171,-1053.7613"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="2302.9171"
+                                y="-1121.1537"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                transmission
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- e&#45;&#45;b -->
+                <g id="edge1" class="edge">
+                    <title>e&#45;&#45;b</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M2353.0775,-1072.8906C2478.1181,-922.6656 2802.2976,-533.1934 2923.5747,-387.4901"
+                    />
+                </g>
+                <!-- e&#45;&#45;d -->
+                <g id="edge11" class="edge">
+                    <title>e&#45;&#45;d</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M2427.1323,-1101.659C2538.5477,-1073.4097 2700.8723,-1032.2524 2810.2232,-1004.5265"
+                    />
+                </g>
+                <!-- e&#45;&#45;l -->
+                <g id="edge10" class="edge">
+                    <title>e&#45;&#45;l</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M2262.6353,-1069.2554C2190.0211,-954.0686 2039.3948,-715.1324 1981.9957,-624.0811"
+                    />
+                </g>
+                <!-- f -->
+                <g id="node6" class="node">
+                    <title>f</title>
+                    <g id="a_node6">
+                        <a xlink:title="conversation">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <rect
+                                fill="none"
+                                stroke="#000000"
+                                cx="1753.6687"
+                                cy="-433.969"
+                                rx="155.6533"
+                                ry="39.6962"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="1753.6687"
+                                y="-421.969"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                conversation
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- f&#45;&#45;l -->
+                <g id="edge5" class="edge">
+                    <title>f&#45;&#45;l</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1803.9233,-471.5918C1836.4706,-495.958 1878.6241,-527.516 1910.7808,-551.5899"
+                    />
+                </g>
+                <!-- g -->
+                <g id="node7" class="node">
+                    <title>g</title>
+                    <g id="a_node7">
+                        <a xlink:title="temporalités">
+                            <image
+                            height="50%"
+                            x="1028.2152"
+                            y="-1100.1546"
+                            display="none"
+                            xlink:href="img/ascii/6pre.jpg"
+                            transform="rotate(5)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="339.5424,-965.4589 339.5424,-1000.8686 242.3845,-1025.9071 104.9826,-1025.9071 7.8247,-1000.8686 7.8247,-965.4589 104.9826,-940.4204 242.3845,-940.4204 339.5424,-965.4589"
+                            />
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="343.5466,-962.3704 343.5466,-1003.9571 242.8941,-1029.8962 104.473,-1029.8962 3.8205,-1003.9571 3.8205,-962.3704 104.473,-936.4313 242.8941,-936.4313 343.5466,-962.3704"
+                            />
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="347.5509,-959.282 347.5509,-1007.0455 243.4036,-1033.8852 103.9635,-1033.8852 -.1838,-1007.0455 -.1838,-959.282 103.9635,-932.4423 243.4036,-932.4423 347.5509,-959.282"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="173.6836"
+                                y="-971.1637"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                temporalités
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- g&#45;&#45;k -->
+                <g id="edge7" class="edge">
+                    <title>g&#45;&#45;k</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M266.9157,-938.2655C284.6386,-929.7306 302.9738,-920.9009 320.0412,-912.6816"
+                    />
+                </g>
+                <!-- h -->
+                <g id="node8" class="node">
+                    <title>h</title>
+                    <g id="a_node8">
+                        <a xlink:title="contemplation">
+                            <image
+                            height="50%"
+                            x="1828.2152"
+                            y="-1200.1546"
+                            display="none"
+                            xlink:href="img/ascii/test.jpg"
+                            transform="rotate(-5)"
+                            ></image>
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="790.2004"
+                                cy="-1191.6981"
+                                rx="173.2644"
+                                ry="173.2644"
+                            />
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="790.2004"
+                                cy="-1191.6981"
+                                rx="177.2675"
+                                ry="177.2675"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="790.2004"
+                                y="-1179.6981"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                contemplation
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- h&#45;&#45;i -->
+                <g id="edge13" class="edge">
+                    <title>h&#45;&#45;i</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M963.2366,-1152.2037C1035.1992,-1135.7787 1116.3471,-1117.2572 1178.8835,-1102.9837"
+                    />
+                </g>
+                <!-- q -->
+                <g id="node15" class="node">
+                    <title>q</title>
+                    <g id="a_node15">
+                        <a xlink:title="poétique">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="1282.9613"
+                                cy="-168.4695"
+                                rx="110.8247"
+                                ry="39.6962"
+                            />
+                            <text
+                                text-anchor="middle"
+                                x="1282.9613"
+                                y="-156.4695"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                poétique
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- i&#45;&#45;q -->
+                <g id="edge14" class="edge">
+                    <title>i&#45;&#45;q</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1282.9613,-972.523C1282.9613,-770.5401 1282.9613,-340.6962 1282.9613,-208.1927"
+                    />
+                </g>
+                <!-- j -->
+                <g id="node10" class="node">
+                    <title>j</title>
+                    <g id="a_node10">
+                        <a xlink:title="proximité">
+                            <image
+                            height="50%"
+                            x="1828.2152"
+                            y="-1200.1546"
+                            display="none"
+                            xlink:href="img/ascii/champion (2).jpg"
+                            transform="rotate(-5)"
+                            ></image>
+                            <ellipse
+                                fill="none"
+                                stroke="#000000"
+                                cx="1742.8064"
+                                cy="-763.7956"
+                                rx="104.9323"
+                                ry="104.9323"
+                            />
+                            <text
+                                id="proximite"
+                                text-anchor="middle"
+                                x="1742.8064"
+                                y="-751.7956"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                proximité
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- k&#45;&#45;h -->
+                <g id="edge8" class="edge">
+                    <title>k&#45;&#45;h</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M440.3671,-912.7153C491.6572,-953.6179 577.6788,-1022.2178 651.5837,-1081.1549"
+                    />
+                </g>
+                <!-- l&#45;&#45;c -->
+                <g id="edge17" class="edge">
+                    <title>l&#45;&#45;c</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1989.0967,-551.7294C2060.9294,-465.4288 2243.102,-246.5651 2327.4502,-145.2283"
+                    />
+                </g>
+                <!-- l&#45;&#45;j -->
+                <g id="edge16" class="edge">
+                    <title>l&#45;&#45;j</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1914.8094,-623.8124C1888.7311,-645.036 1854.935,-672.5406 1824.2113,-697.5449"
+                    />
+                </g>
+                <!-- n -->
+                <g id="node13" class="node">
+                    <title>n</title>
+                    <g id="a_node13">
+                        <a xlink:title="valeur">
+                            <image
+                                width="50%"
+                                x="1228.2152"
+                                y="-800.1546"
+                                filter="opacity(0%)"
+                                transform="rotate(10)"
+                            ></image>
+                            <polygon
+                                fill="none"
+                                stroke="#000000"
+                                points="790.2004,-112 674.3124,-56 790.2004,0 906.0884,-56 790.2004,-112"
+                            />
+                            <text
+                                id="valeur"
+                                text-anchor="middle"
+                                x="790.2004"
+                                y="-44"
+                                font-family="Times,serif"
+                                font-size="40.00"
+                                fill="#000000"
+                            >
+                                valeur
+                            </text>
+                        </a>
+                    </g>
+                </g>
+                <!-- n&#45;&#45;q -->
+                <g id="edge19" class="edge">
+                    <title>n&#45;&#45;q</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M869.0976,-74.0078C956.3734,-93.9279 1096.8911,-126.0001 1189.5847,-147.1569"
+                    />
+                </g>
+                <!-- p&#45;&#45;n -->
+                <g id="edge18" class="edge">
+                    <title>p&#45;&#45;n</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M443.8879,-332.175C521.5307,-270.2569 671.9043,-150.338 746.312,-90.9998"
+                    />
+                </g>
+                <!-- q&#45;&#45;p -->
+                <g id="edge15" class="edge">
+                    <title>q&#45;&#45;p</title>
+                    <path
+                        fill="none"
+                        stroke="none"
+                        d="M1189.6161,-189.7749C1020.0847,-228.4693 663.2809,-309.9075 491.4898,-349.1177"
+                    />
+                </g>
+            </g>
+        </svg>
+
+        <svg id="considérer"
+        version="1.1"
+        id="svg824"
+        viewBox="0.00 0.00 3462.86 1496.83"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg">
+       <defs
+          id="defs828" />
+       <g
+          id="g830">
+         <g
+            aria-label="considérer"
+            id="text1445"
+            style="font-size:85.3333px;line-height:1.25;letter-spacing:0px;word-spacing:0px">
+           <path
+              d="M 36.750878,45.811243 34.020213,44.44591 c -1.365333,2.730666 -3.413332,6.826664 -9.557329,6.826664 -5.461331,0 -10.922663,-4.095998 -10.922663,-16.383993 0,-12.287995 3.413332,-17.749326 8.874663,-17.749326 6.058665,0 8.78933,3.925332 6.741331,7.76533 0,0.08533 0,0.170667 -0.08533,0.256 -0.341334,0.682666 -0.512,1.365333 -0.512,2.218666 0,2.730665 2.047999,4.778664 4.778665,4.778664 2.730665,0 4.778664,-2.047999 4.778664,-4.778664 0,-7.509331 -6.826664,-14.335994 -15.701327,-14.335994 -11.605328,0 -17.7493255,10.239995 -17.7493255,21.845324 0,11.605328 6.1439975,21.845324 17.7493255,21.845324 10.922663,0 12.970662,-8.191997 14.335994,-10.922662 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4089" />
+           <path
+              d="M 93.412173,44.888324 C 93.412173,33.282995 85.902842,23.043 72.932181,23.043 59.96152,23.043 52.45219,33.282995 52.45219,44.888324 c 0,11.605328 7.50933,21.845324 20.479991,21.845324 12.970661,0 20.479992,-10.239996 20.479992,-21.845324 z m -8.874663,0 c 0,12.287995 -4.778665,17.749326 -11.605329,17.749326 -6.826664,0 -11.605328,-5.461331 -11.605328,-17.749326 0,-12.287995 4.778664,-17.749326 11.605328,-17.749326 6.826664,0 11.605329,5.461331 11.605329,17.749326 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4091" />
+           <path
+              d="m 122.42548,73.320316 -5.46133,-2.730665 V 43.282995 c 3.072,-3.071998 6.48533,-5.461331 8.53333,-5.461331 4.096,0 7.16799,3.413332 7.16799,10.239996 v 22.527991 l -5.46133,2.730665 v 2.047999 h 18.09066 v -2.047999 l -5.46133,-2.730665 V 49.426993 c 0,-9.55733 -2.048,-16.383993 -11.60533,-16.383993 -3.41333,0 -6.48533,1.365332 -10.58133,5.461331 l -1.36533,1.365332 h -0.34133 v -5.461331 h -11.60533 v 2.047999 l 5.46133,2.730666 v 31.402654 l -5.46133,2.730665 v 2.047999 h 18.09066 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4093" />
+           <path
+              d="m 178.06277,86.051316 c 10.92266,0 12.288,-6.826664 12.288,-11.605329 0,-4.778665 -3.41333,-9.898662 -12.288,-14.335994 -5.46133,-2.730665 -8.87466,-4.778665 -8.87466,-7.50933 0,-2.730666 2.048,-4.778665 6.144,-4.778665 3.24266,0 6.48533,1.28 9.04533,5.973331 l 1.87733,4.266665 h 2.73066 V 44.408666 h -2.73066 l -2.56,2.559999 c -2.816,-2.303999 -5.54666,-3.242665 -8.36266,-3.242665 -5.46133,0 -11.60533,2.901332 -11.60533,11.605328 0,7.509331 6.31466,10.239996 12.97066,14.335994 4.94933,3.071999 7.50933,4.778665 7.50933,7.509331 0,3.413332 -2.048,4.778664 -6.144,4.778664 -5.46133,0 -10.23999,-4.778664 -12.28799,-12.970661 h -2.73067 v 16.383993 h 2.73067 l 3.072,-3.071998 c 3.41333,3.071998 6.31466,3.754665 9.21599,3.754665 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4095" />
+           <path
+              d="m 228.06807,33.929 c -3.072,0 -5.46133,2.389332 -5.46133,5.461331 0,3.071999 2.38933,5.461331 5.46133,5.461331 3.072,0 5.46133,-2.389332 5.46133,-5.461331 0,-3.071999 -2.38933,-5.461331 -5.46133,-5.461331 z m 16.21333,59.391975 -12.288,-4.095998 V 54.408991 h -15.35999 v 2.047999 l 8.19199,2.730666 v 30.037321 l -12.45866,4.095998 v 2.047999 h 31.91466 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4097" />
+           <path
+              d="m 278.4147,102.63798 c -5.46133,0 -9.55733,-5.461335 -9.55733,-17.74933 0,-12.287995 4.096,-17.749326 9.55733,-17.749326 4.096,0 6.144,1.023999 9.216,4.095998 v 27.306655 c -3.072,3.072003 -5.12,4.096003 -9.216,4.096003 z m 9.216,0 v 2.73066 h 13.31199 v -2.048 l -5.46133,-2.73066 V 45.294 h -13.312 v 2.047999 l 5.46134,2.730666 v 14.335993 c -2.048,-0.682666 -6.48533,-1.365332 -9.216,-1.365332 -11.60533,0 -18.43199,10.239995 -18.43199,21.845324 0,11.605328 6.82666,21.84532 18.43199,21.84532 3.41333,0 6.144,-1.024 9.216,-4.09599 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4099" />
+           <path
+              d="m 326.20133,70.312993 15.61599,-7.25333 c 1.70667,-0.682667 2.816,-2.303999 2.816,-4.351998 0,-2.730666 -2.048,-4.778665 -4.77866,-4.778665 -1.36533,0 -2.56,0.512 -3.41333,1.365333 l -12.288,12.287995 z m 21.84532,35.498657 -2.73066,-1.36534 c -1.36533,2.73067 -4.096,6.82667 -10.24,6.82667 -5.46133,0 -10.92266,-4.096 -10.92266,-16.383997 V 93.52365 h 25.25866 c 0,-10.239996 -4.096,-20.479991 -16.384,-20.479991 -11.60532,0 -17.74932,10.239995 -17.74932,21.845324 0,11.605327 6.144,21.845327 17.74932,21.845327 10.92267,0 13.65333,-8.192 15.01866,-10.92266 z M 333.02799,77.139657 c 5.46134,0 8.192,6.826664 8.192,12.287995 H 324.40933 C 325.348,80.979655 328.42,77.139657 333.02799,77.139657 Z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4101" />
+           <path
+              d="m 386.61729,125.36832 v -2.048 l -5.46133,-2.73067 v -19.79732 l 7.50933,-7.509335 c 3.41333,-3.413332 4.43733,-4.095998 5.80266,-4.095998 2.048,0 1.36534,4.778665 6.82667,4.778665 2.73066,0 4.77866,-2.047999 4.77866,-4.778665 0,-3.413332 -2.73066,-6.143997 -6.82666,-6.143997 -3.584,0 -6.48533,0 -11.264,4.778664 l -7.85066,7.850664 V 84.408332 h -12.288 v 2.047999 l 5.46134,2.730666 v 31.402653 l -5.46134,2.73067 v 2.04799 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4103" />
+           <path
+              d="m 451.81191,125.81099 -2.73066,-1.36534 c -1.36533,2.73067 -4.096,6.82667 -10.24,6.82667 -5.46133,0 -10.92266,-4.096 -10.92266,-16.384 v -1.36533 h 25.25866 c 0,-10.23999 -4.096,-20.47999 -16.384,-20.47999 -11.60533,0 -17.74932,10.24 -17.74932,21.84532 0,11.60533 6.14399,21.84533 17.74932,21.84533 10.92267,0 13.65333,-8.192 15.01866,-10.92266 z M 436.79325,97.138998 c 5.46133,0 8.192,6.826662 8.192,12.287992 h -16.81066 c 0.93867,-8.44799 4.01067,-12.287992 8.61866,-12.287992 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4105" />
+           <path
+              d="m 490.38255,145.36831 v -2.04799 l -5.46133,-2.73067 v -19.79732 l 7.50933,-7.50933 c 3.41333,-3.41334 4.43733,-4.096 5.80266,-4.096 2.048,0 1.36533,4.77866 6.82667,4.77866 2.73066,0 4.77866,-2.048 4.77866,-4.77866 0,-3.41334 -2.73067,-6.144 -6.82666,-6.144 -3.584,0 -6.48533,0 -11.264,4.77866 l -7.85066,7.85067 v -11.264 h -12.288 v 2.048 l 5.46133,2.73067 v 31.40265 l -5.46133,2.73067 v 2.04799 z"
+              style="font-family:Toren;-inkscape-font-specification:Toren"
+              id="path4107" />
+         </g>
+       </g>
+     </svg>
+     
+
+
+<svg id="attention"
+version="1.1"
+id="svg824"
+viewBox="0.00 0.00 3462.86 1496.83"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+<defs
+  id="defs828" />
+<g
+  id="g830">
+ <g
+    aria-label="attention"
+    id="text1445"
+    style="font-size:85.3333px;line-height:1.25;letter-spacing:0px;word-spacing:0px">
+   <path
+      d="m 19.684219,52.125907 c -5.461331,0 -6.485331,-4.949331 -6.485331,-7.679997 0,-5.461331 2.730666,-9.557329 11.946662,-9.557329 h 3.071999 v 11.605328 c -3.071999,3.071999 -6.143998,5.631998 -8.53333,5.631998 z m 8.703996,-0.853333 0.853333,-0.853333 v 4.949331 H 41.529543 V 53.320573 L 36.068212,50.589908 V 28.061917 c 0,-9.557329 -4.095998,-15.01866 -15.701327,-15.01866 -8.362663,0 -14.1653271,5.290664 -14.3359937,10.751995 v 0.170667 c 0,2.730665 2.0479991,4.778664 4.7786647,4.778664 2.730665,0 4.778665,-2.047999 4.778665,-4.778664 0,-1.365333 -0.512,-2.559999 -1.365333,-3.413332 -0.682667,-1.365333 1.365333,-3.413332 6.143997,-3.413332 6.143998,0 7.850664,4.095998 7.850664,8.191996 v 5.461331 H 25.14555 c -12.629328,0 -20.8213247,5.461332 -20.8213247,13.653328 0,6.143998 4.4373315,12.287995 13.9946607,12.287995 3.413332,0 5.973331,-1.365333 10.069329,-5.461331 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9923" />
+   <path
+      d="m 71.225515,66.733977 c 5.461331,0 8.874663,-4.095998 8.874663,-8.874663 h -2.730665 c 0,2.047999 -1.365333,3.413332 -3.413332,3.413332 -2.048,0 -3.413332,-1.365333 -3.413332,-3.413332 V 28.50466 H 87.950841 V 24.408661 H 70.542849 V 11.438 h -3.754665 c 0,6.143997 -4.095999,12.970661 -12.970662,12.970661 v 4.095999 h 8.874663 v 29.354654 c 0,4.778665 3.413332,8.874663 8.53333,8.874663 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9925" />
+   <path
+      d="m 123.10814,76.733977 c 5.46134,0 8.87467,-4.095998 8.87467,-8.874663 h -2.73067 c 0,2.047999 -1.36533,3.413332 -3.41333,3.413332 -2.048,0 -3.41333,-1.365333 -3.41333,-3.413332 V 38.50466 h 17.40799 V 34.408661 H 122.42548 V 21.438 h -3.75467 c 0,6.143997 -4.096,12.970661 -12.97066,12.970661 v 4.095999 h 8.87466 v 29.354654 c 0,4.778665 3.41334,8.874663 8.53333,8.874663 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9927" />
+   <path
+      d="m 192.39877,75.810986 -2.73067,-1.365333 c -1.36533,2.730666 -4.096,6.826664 -10.23999,6.826664 -5.46134,0 -10.92267,-4.095998 -10.92267,-16.383993 v -1.365333 h 25.25866 c 0,-10.239996 -4.096,-20.479991 -16.38399,-20.479991 -11.60533,0 -17.74933,10.239995 -17.74933,21.845324 0,11.605328 6.144,21.845324 17.74933,21.845324 10.92266,0 13.65332,-8.191997 15.01866,-10.922662 z M 177.38011,47.138998 c 5.46133,0 8.19199,6.826664 8.19199,12.287995 h -16.81066 c 0.93867,-8.447997 4.01067,-12.287995 8.61867,-12.287995 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9929" />
+   <path
+      d="m 226.19074,93.320316 -5.46133,-2.730665 V 63.282995 c 3.07199,-3.071998 6.48533,-5.461331 8.53333,-5.461331 4.09599,0 7.16799,3.413332 7.16799,10.239996 v 22.527991 l -5.46133,2.730665 v 2.047999 h 18.09066 v -2.047999 l -5.46133,-2.730665 V 69.426993 c 0,-9.55733 -2.048,-16.383993 -11.60533,-16.383993 -3.41333,0 -6.48533,1.365332 -10.58133,5.461331 l -1.36533,1.365332 h -0.34133 v -5.461331 h -11.60533 v 2.047999 l 5.46133,2.730666 v 31.402654 l -5.46133,2.730665 v 2.047999 h 18.09066 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9931" />
+   <path
+      d="m 278.75603,56.733905 c 5.46133,0 8.87467,-4.095998 8.87467,-8.874663 h -2.73067 c 0,2.047999 -1.36533,3.413332 -3.41333,3.413332 -2.048,0 -3.41333,-1.365333 -3.41333,-3.413332 V 18.504588 h 17.40799 V 14.408589 H 278.07337 V 1.4379281 h -3.75467 c 0,6.1439974 -4.096,12.9706609 -12.97066,12.9706609 v 4.095999 h 8.87466 v 29.354654 c 0,4.778665 3.41333,8.874663 8.53333,8.874663 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9933" />
+   <path
+      d="m 331.83333,3.929 c -3.072,0 -5.46133,2.3893323 -5.46133,5.461331 0,3.071999 2.38933,5.461331 5.46133,5.461331 3.072,0 5.46133,-2.389332 5.46133,-5.461331 0,-3.0719987 -2.38933,-5.461331 -5.46133,-5.461331 z m 16.21332,59.391975 -12.28799,-4.095998 V 24.408991 h -15.35999 v 2.047999 l 8.19199,2.730666 V 59.224977 L 316.132,63.320975 v 2.047999 h 31.91465 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9935" />
+   <path
+      d="m 404.70795,34.888581 c 0,-11.605329 -7.50933,-21.845324 -20.47999,-21.845324 -12.97066,0 -20.47999,10.239995 -20.47999,21.845324 0,11.605328 7.50933,21.845324 20.47999,21.845324 12.97066,0 20.47999,-10.239996 20.47999,-21.845324 z m -8.87466,0 c 0,12.287995 -4.77867,17.749326 -11.60533,17.749326 -6.82667,0 -11.60533,-5.461331 -11.60533,-17.749326 0,-12.287995 4.77866,-17.749326 11.60533,-17.749326 6.82666,0 11.60533,5.461331 11.60533,17.749326 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9937" />
+   <path
+      d="m 433.72125,43.320316 -5.46133,-2.730665 V 13.282995 c 3.072,-3.071998 6.48533,-5.461331 8.53333,-5.461331 4.096,0 7.168,3.413332 7.168,10.239996 v 22.527991 l -5.46133,2.730665 v 2.047999 h 18.09066 v -2.047999 l -5.46133,-2.730665 V 19.426993 c 0,-9.55733 -2.048,-16.383993 -11.60533,-16.383993 -3.41333,0 -6.48533,1.365332 -10.58133,5.461331 l -1.36533,1.365332 h -0.34134 V 4.408332 H 415.6306 v 2.047999 l 5.46133,2.730666 v 31.402654 l -5.46133,2.730665 v 2.047999 h 18.09065 z"
+      style="font-family:Toren;-inkscape-font-specification:Toren"
+      id="path9939" />
+ </g>
+</g>
+</svg>
+
+
+<svg id="porter"
+   version="1.1"
+   id="svg824"
+   viewBox="0.00 0.00 3462.86 1496.83"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs828" />
+  <g
+     id="g830">
+    <g
+       aria-label="porter "
+       id="text1445"
+       style="font-size:85.3333px;line-height:1.25;letter-spacing:0px;word-spacing:0px">
+      <path
+         d="m 23.749149,193.81343 c -4.095998,0 -6.143998,-1.024 -9.215996,-4.09599 v -27.30666 c 3.071998,-3.072 5.119998,-4.096 9.215996,-4.096 5.461331,0 9.557329,5.46133 9.557329,17.74933 0,12.28799 -4.095998,17.74932 -9.557329,17.74932 z m -3.754665,17.06666 -5.461331,-2.73066 v -11.69066 l 0.341333,0.0853 c 2.047999,0.68266 6.143997,1.36533 8.874663,1.36533 11.605328,0 18.431992,-10.24 18.431992,-21.84532 0,-11.60533 -6.826664,-21.84533 -18.431992,-21.84533 -3.413332,0 -6.143998,1.024 -9.215996,4.096 l -1.024,1.024 v -3.75466 H 1.2211585 v 2.048 l 5.4613311,2.73066 v 47.78665 l -5.4613311,2.73066 v 2.048 H 19.994484 Z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10020" />
+      <path
+         d="m 94.063771,166.06433 c 0,-11.60533 -7.509331,-21.84533 -20.479992,-21.84533 -12.970661,0 -20.479991,10.24 -20.479991,21.84533 0,11.60533 7.50933,21.84532 20.479991,21.84532 12.970661,0 20.479992,-10.23999 20.479992,-21.84532 z m -8.874663,0 c 0,12.28799 -4.778665,17.74932 -11.605329,17.74932 -6.826664,0 -11.605328,-5.46133 -11.605328,-17.74932 0,-12.288 4.778664,-17.74933 11.605328,-17.74933 6.826664,0 11.605329,5.46133 11.605329,17.74933 z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10022" />
+      <path
+         d="m 127.85574,176.54432 v -2.048 l -5.46133,-2.73066 v -19.79733 l 7.50933,-7.50933 c 3.41333,-3.41333 4.43733,-4.096 5.80267,-4.096 2.048,0 1.36533,4.77867 6.82666,4.77867 2.73067,0 4.77866,-2.048 4.77866,-4.77867 0,-3.41333 -2.73066,-6.144 -6.82666,-6.144 -3.584,0 -6.48533,0 -11.26399,4.77867 l -7.85067,7.85066 v -11.26399 h -12.28799 v 2.048 l 5.46133,2.73066 v 31.40266 l -5.46133,2.73066 v 2.048 z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10024" />
+      <path
+         d="m 175.64237,197.90943 c 5.46133,0 8.87467,-4.096 8.87467,-8.87466 h -2.73067 c 0,2.048 -1.36533,3.41333 -3.41333,3.41333 -2.048,0 -3.41333,-1.36533 -3.41333,-3.41333 v -29.35465 h 17.40799 v -4.096 h -17.40799 v -12.97066 h -3.75467 c 0,6.14399 -4.096,12.97066 -12.97066,12.97066 v 4.096 h 8.87466 v 29.35465 c 0,4.77866 3.41334,8.87466 8.53333,8.87466 z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10026" />
+      <path
+         d="m 244.933,186.98677 -2.73067,-1.36533 c -1.36533,2.73066 -4.096,6.82666 -10.24,6.82666 -5.46133,0 -10.92266,-4.096 -10.92266,-16.38399 v -1.36533 h 25.25866 c 0,-10.24 -4.096,-20.48 -16.38399,-20.48 -11.60533,0 -17.74933,10.24 -17.74933,21.84533 0,11.60533 6.144,21.84532 17.74933,21.84532 10.92266,0 13.65332,-8.19199 15.01866,-10.92266 z m -15.01866,-28.67199 c 5.46133,0 8.19199,6.82667 8.19199,12.288 h -16.81066 c 0.93867,-8.448 4.01067,-12.288 8.61867,-12.288 z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10028" />
+      <path
+         d="m 283.50363,196.5441 v -2.048 l -5.46133,-2.73066 v -19.79733 l 7.50933,-7.50933 c 3.41333,-3.41333 4.43733,-4.096 5.80266,-4.096 2.048,0 1.36534,4.77867 6.82667,4.77867 2.73066,0 4.77866,-2.048 4.77866,-4.77867 0,-3.41333 -2.73066,-6.144 -6.82666,-6.144 -3.584,0 -6.48533,0 -11.264,4.77867 l -7.85066,7.85066 v -11.26399 h -12.28799 v 2.048 l 5.46133,2.73066 v 31.40266 l -5.46133,2.73066 v 2.048 z"
+         style="font-family:Toren;-inkscape-font-specification:Toren"
+         id="path10030" />
+    </g>
+  </g>
+</svg>
+     
+        <footer>                
+
+            <ul>
+                <li id="about">À propos</li>
+                <div id="leftAbout" style="display:none">
+                    <h2>À propos</h2>
+                    <p id="content">dfvdvsdvsdvsdvsvd</p>
+                    <span class="croix">+</span></div>
+                
+                <li id="colophon">Colophon</li>
+                <div id="middleColophon" style="display:none">
+                    <h2>Colophon</h2>
+                    <p id="content">dfvdvsdvsdvsdvsvd</p>
+                    <span class="croix">+</span></div>
+            </ul>
+        </footer>
+    </body>
+    <script src="./descriptions.js"></script>
+    <script src="./main.js"></script>
+</html>
